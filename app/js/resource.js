@@ -4,4 +4,5 @@
  * resource definition
  * 
  * aaaa
+ * bbbb
  */
