@@ -7,30 +7,20 @@
 </head>
 
 <body>
-<canvas id="gameCanvas" width="1024" height="768"></canvas>
+test
+<div style="display:inline-block;width:auto; margin: 0 auto; background: black; position:relative; border:5px solid black; border-radius: 10px; box-shadow: 0 5px 50px #333">
+    <canvas id="gameCanvas" width="880" height="320"></canvas>
+</div>
+
 <script type="text/javascript">
     window.onload = function(){
-        cc.game.onStart = function(){
-            //load resources
-            cc.LoaderScene.preload(["HelloWorld.png"], function () {
-                var MyScene = cc.Scene.extend({
-                    onEnter:function () {
-                        this._super();
-                        var size = cc.director.getWinSize();
-                        var sprite = cc.Sprite.create("HelloWorld.png");
-                        sprite.setPosition(size.width / 2, size.height / 2);
-                        sprite.setScale(0.8);
-                        this.addChild(sprite, 0);
-
-                        var label = cc.LabelTTF.create("Hello World", "Arial", 40);
-                        label.setPosition(size.width / 2, size.height / 2);
-                        this.addChild(label, 1);
-                    }
-                });
-                cc.director.runScene(new MyScene());
-            }, this);
-        };
-        cc.game.run("gameCanvas");
+        //cc.game.onStart = function(){
+        	//cc.ResolutionPolicy(cc.ContainerStrategy.EQUAL_TO_FRAME, cc.ContentStrategy.EXACT_FIT);
+        	//cc.view.setDesignResolutionSize(1024, 768, cc.ResolutionPolicy.SHOW_ALL);
+        	//cc.view.resizeWithBrowserSize(false);
+        	
+        //}
+		//cc.game.run("gameCanvas");
     };
 
 </script>
