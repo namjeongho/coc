@@ -8,5 +8,7 @@
     "engineDir"		: "lib/cocos2d-js",
     "modules"		: "cocos2d",
     "jsList"        : [
+    	"js/resource.js",
+    	"js/TitleScene.js"
     ]
 }
